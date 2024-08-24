@@ -1,0 +1,68 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./p1.css">
+</head>
+
+<body>
+    <div class="card">
+        <div class="search">
+            <input type="text" placeholder="Please Enter City Name" spellcheck="false">
+            <button><img src="./p1_image/search.png"></button>
+        </div>
+        <div class="weather">
+            <img src="./p1_image/mist.png" class="weather-icon">
+            <h1 class="temp">22°c</h1>
+            <h2 class="city">New York</h2>
+            <div class="deatil">
+                <div class="col">
+                    <img src="./p1_image/humidity.png">
+                    <div>
+                        <p class="humidity">50%</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="./p1_image/wind.png">
+                    <div>
+                        <p class="wind">50% km/h</p>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // const apikey = "0819af798e730aacab9a780105498f31";
+        // const apiurl ="https://api.openweathermap.org/data/2.5/weather?&units=metric";
+        // const searchinp = document.querySelector(".search input");
+        // const searchbtn = document.querySelector(".search button");
+
+
+        // async function weather(city) {
+        //     const response = await fetch(apiurl + city + `&appid=${apikey}`);
+        //     let data = await response.json();
+        // console.log(data);
+        //    if(response.ok){
+        //     document.querySelector('.city').innerHTML= data.name;
+        //     document.querySelector('.temp').innerHTML= `${Math.round(data.main.temp)} °c `;
+        //     document.querySelector('.humidity').innerHTML= `${data.main.humidity} % `;
+        //     document.querySelector('.wind').innerHTML= `${data.wind.speed} km/h `;}
+        //     else{
+        //         alert('try again')
+        //     }
+        // }
+        // searchbtn.addEventListener('click' , ()=> {
+        //     weather(searchinp.value.trim());
+        // })
+
+    </script>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
