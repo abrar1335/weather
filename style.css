@@ -96,3 +96,20 @@ body {
 .weather {
     display: none;
 }
+
+@media screen and (max-width:576px) {
+    .card .search {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    .card .search  input {
+        padding:0;
+        margin-right:5px;
+        width: 90%;
+    }
+    .card {
+        height: auto;
+    }
+
+}
